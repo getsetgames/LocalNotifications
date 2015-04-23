@@ -9,7 +9,6 @@ void ULocalNotificationsComponent::OnRegister()
 {
 	Super::OnRegister();
 	
-	// init here
 	FCoreDelegates::ApplicationReceivedLocalNotificationDelegate.AddUObject(this, &ULocalNotificationsComponent::ApplicationReceivedLocalNotification_Handler);
 	FCoreDelegates::ApplicationHandleActionForLocalNotificationDelegate.AddUObject(this, &ULocalNotificationsComponent::ApplicationHandleActionForLocalNotification_Handler);
 }
@@ -18,7 +17,6 @@ void ULocalNotificationsComponent::OnUnregister()
 {
 	Super::OnUnregister();
 	
-	// clean up here
 	FCoreDelegates::ApplicationReceivedLocalNotificationDelegate.RemoveAll(this);
 	FCoreDelegates::ApplicationHandleActionForLocalNotificationDelegate.RemoveAll(this);
 }
