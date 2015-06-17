@@ -1,21 +1,23 @@
 {
-	"FileVersion" : 3,
-	
-	"FriendlyName" : "LocalNotifications",
-	"Version" : 1,
-	"VersionName" : "1.0",
-	"CreatedBy" : "Get Set Games Inc.",
-	"CreatedByURL" : "https://github.com/getsetgames/LocalNotifications",
-	"EngineVersion" : "4.7.0",
-	"Description" : "This plugin enables local notifications on iOS.",
-	"Category" : "Developer",
-	"EnabledByDefault" : false,
-	
-	"Modules" :
-	[
+	"FileVersion": 3,
+	"Version": 1,
+	"VersionName": "1.0",
+	"FriendlyName": "LocalNotifications",
+	"Description": "This plugin enables local notifications on iOS.",
+	"Category": "Notifications",
+	"CreatedBy": "Get Set Games Inc.",
+	"CreatedByURL": "http://getsetgames.com",
+	"DocsURL": "https://github.com/getsetgames/LocalNotifications",
+	"MarketplaceURL": "",
+	"Modules": [
 		{
-			"Name" : "LocalNotifications",
-			"Type" : "Runtime"
+			"Name": "LocalNotifications",
+			"Type": "Runtime",
+			"LoadingPhase": "Default"
 		}
-	]
+	],
+	"EnabledByDefault": false,
+	"CanContainContent": false,
+	"IsBetaVersion": false,
+	"Installed": false
 }
